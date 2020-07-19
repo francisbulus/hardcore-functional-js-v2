@@ -2,8 +2,8 @@ const {curry} = require('ramda')
 
 const add = (x, y) => x + y
 
-// const curry = f =>
-//   x => y => f(x, y)
+const curry = f =>
+  x => y => f(x, y)
 
 const modulo = curry((x, y) => y % x)
 
